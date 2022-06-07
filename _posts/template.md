@@ -1,8 +1,8 @@
 ---
-title: tdarr
+title: Template
 date: 2022-06-05 21:00:00 -500
-categories: [synology]
-tags: [servers] # TAG names should always be lowecase
+categories: [documentation]
+tags: [documentation] # TAG names should always be lowecase
 ---
 
 # Header 1
