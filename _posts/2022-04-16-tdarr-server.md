@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tdarr server and node configuration to convert Videos to h265"
-date: 2022-04-16 10:00:00 -0500
+date: 2022-04-16 10:00:00 +200
 categories: homelab 
 tags: [tdarr,docker,hevc,h265,nvidia]
 ---
