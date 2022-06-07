@@ -10,16 +10,17 @@ tags: [servers] # TAG names should always be lowecase
 ## Header 2
 
 yes
+
 ```bash
 suda apt update && sudo apt upgrade
 ```
 
 ```yml
-asda
+# yml
+version: "3.4"
 ```
 
 `code`
-
 
 ```json
 {
@@ -29,10 +30,20 @@ asda
 
 ```dockerfile
 FROM nginx:stable-alpine
-COPY agrestic1_site /usr/share/nginx/html
+COPY _site /usr/share/nginx/html
 ```
+
+### Link
+
+[https://agrestic1.github.io/](https://agrestic1.github.io/)
+
+```markdown
+[https://agrestic1.github.io/](https://agrestic1.github.io/)
+```
+
 
 ```markdown
 ... which is shown in the screenshot below:
-![A screenshot](/assets/screenshot.jpg)
+![A screenshot](/assets/docker_WSL1.png)
 ```
+![A screenshot](/assets/docker_WSL1.png)
