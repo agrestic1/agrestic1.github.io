@@ -19,8 +19,6 @@ HowTo:
 
 Ordner temp und media in den docker container mounten. In tdarr eine Library erstellen, auf lokalen ordner verweisen "/tdarr_convert", Transcode cache "/temp" und GPU aktivieren.
 
-Am Rechner müssen Laufwerke mit diesem Ordner ebenfalls gemountet sein und in Tdarr_Node_Config.json für den Computer richtig translatet, siehe unten.
-
 ## Docker Server + Node
 
 `docker-compose.yml`
@@ -62,6 +60,8 @@ services:
       - /volumeUSB1/usbshare/temp:/temp
       # - /volume1/homes/Martin/tdarr_convert/:/tdarr_convert # funktioniert nicht, Medien auf volume1 werden in tdarr im Browser der library nicht angezeigt, obwohl im container vorhanden (docker exec -it)
       # - /volume1/homes/Martin/temp:/temp
+    devices:
+      - /dev/dri # For Intel grafic card and QSV
       
     # deploy:
     #  resources:
@@ -72,6 +72,8 @@ services:
 ```
 
 ## Windows Node
+
+Am Rechner müssen Laufwerke mit diesem Ordner ebenfalls gemountet sein und in Tdarr_Node_Config.json für den Computer richtig translatet, siehe unten.
 
 `Tdarr_Node_Config.json`
 
@@ -99,7 +101,3 @@ services:
   "nodePort": "8267"
 }
 ```
-
-## Links
-
-🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files
